@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9; /* Light background for a clean look */
+  color: #333; /* Dark gray text color for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Input container styling */
+.input {
+  background-color: #ffffff; /* White background for a clean look */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a soft floating effect */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Label styling */
+label {
+  color: #555; /* Darker gray text color for labels */
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input field styling */
+#cityes {
+  width: calc(100% - 22px); /* Adjusted width considering padding and border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light gray border for input field */
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Light gray background for input field */
+  color: #333; /* Dark text color */
+  font-size: 16px;
+}
+
+/* Submit button styling */
+#butt {
+  background-color: #007bff; /* Blue background for the button */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+#butt:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+  opacity: 0.9; /* Slightly faded effect on hover */
+}
+
+/* City name styling */
+.city {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* Dark text color */
+}
+
+/* Temperature and weather info styling */
+.info,
+.info2 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: #666; /* Medium gray for temperatures */
+}
+
+.curr {
+  font-size: 1.2rem;
+  color: #888; /* Lighter gray for weather description */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .input {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #cityes {
+    width: calc(100% - 22px);
+  }
+
+  #butt {
+    width: 100%;
+  }
+}
